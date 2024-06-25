@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order</title>
+	<link rel="stylesheet" type="text/css" href="SamsanTea.css">
+</head>
+<body bgcolor="#3399ff ">
+	<center>
+		<a href="SamsanTea.html"><img src="Pics/samsantea.png" width="100" height="80"></a>
+
+		<div class="box2" >
+		   <h1>Menu</h1>
+		   <button onclick="show()"> Classic </button>
+
+		   <div id="sho" hidden class="box3">
+		        <h1>Classic Flavors</h1></br></br>
+
+		        <label>
+		           <img src="Pics/okinawa.png" height="160px" width="140px">		        	
+		           <input type="radio" name="radio" id="flv1" value="Okinawa">
+				   
+		        </label>
+		        <label>
+		        	<img src="Pics/wmelon.png" height="160px" width="140px"> 
+                    <input type="radio" name="radio" id="flv2" value="Wintermelon">  
+				     
+		        </label>
+		        <label>
+		            <img src="Pics/choco.png" height="160px" width="140px">
+		            <input type="radio" name="radio" id="flv3" value="Chocolate">
+				     		        
+		        </label>
+		        <label>
+		            <img src="Pics/ichigo.png" height="160px" width="140px">  			        		        	
+		        	<input type="radio" name="radio" id="flv4" value="Strawberry"> 
+				    
+		        </label>
+		  <p id="f1" style="display:none">You chose Okinawa. Proceed to size.</p>
+		  <p id="f2" style="display:none">You chose Wintermelon. Proceed to size.</p> 
+		  <p id="f3" style="display:none">You chose Chocolate. Proceed to size.</p>  
+		  <p id="f4" style="display:none">You chose Strawberry. Proceed to size.</p> 
+		   
+		   	<br><br>
+		   	<button class="buttons" onclick="rvq(); sho();"> Next </button><br><br>
+		   <div id="invis" hidden>
+		   	<h1>Size</h1>
+		    		<br><br>
+
+		    		<label>
+		    			<input type="radio" name="rad" id="sz2">
+		    			16oz = 49 php
+		    		</label>
+		    		<label>
+		    			<input type="radio" name="rad" id="sz1">
+		    			22oz = 69 php
+		    		</label>
+		    		<br><br>
+		   	<h1>Add-Ons</h1>
+		   	<br><br>
+		   	<label>
+		        	<input type="radio" name="radios" id="1">
+		                Nata De Coco  
+		            </label>
+		            <label >
+		                <input type="radio" name="radios" id="2">
+		                Jelly
+		            </label>
+		            <label >
+		                <input type="radio" name="radios" id="3">
+		                Pearl  
+		            </label>
+		            <label >
+		                <input type="radio" name="radios" id="4">
+		                None
+		            </label>
+		            <p id="demos"> </p>
+		            <p id="demo"> </p>
+		            <p id="fs"> </p>
+		            <br>
+		            <button class="buttons" onclick="level(); dagdag(); ipatong(); add();" > Next </button><br>
+		            <div id="lvl" hidden>
+		            	<br>
+		            	<h1> Sugar Level </h1>
+		            	(Please put the Sugar Level) <br>
+		            	<input type="" name="" id="money" placeholder="0-100"><br><br>
+		            	<button onclick="clck(); bayad();" class="buttons"> Next </button> 
+	                    <p id="prt" value ="clck()"></p>
+		            </div>
+		            <div id="pay" hidden>
+		            	<input type="" name="" id="moneys" placeholder="Enter Your Money"><br><br>
+		            	<button onclick="clcks(); rtrn();" class="buttons">Pay up</button>
+		            	<p id="py"></p>
+		            	<p id="pyss"></p>
+		            	<p id="pys"></p>   		            
+		         	</div>
+		         	<div id="last" hidden>
+		         		<br><br><br>
+		         		<p> Thank you for ordering!</p>
+		         		<p> Return to Homepage</p>
+		         		<a href="SamsanTea.html"><img src="Pics/samsantea.png" width="100" height="80"></a>
+		         	</div>
+		   </div>
+
+
+		   </div>
+
+		   </br></br>
+
+		   <button onclick="invisible()"> Cheesecake </button>
+
+		    <div id="invi" hidden class="box3">
+		    	<label>		    		
+		            <img src="Pics/matcha.png" height="160px" width="140px"> 
+		            <input type="radio" name="radio" id="sp1" value="matcha"> 
+		        </label>
+		        <label>		        	   
+		            <img src="Pics/oreo.png" height="160px" width="140px"> 
+		            <input type="radio" name="radio" id="sp2" value="oreo">
+		        </label>
+		        <label>	
+		            <img src="Pics/bberry.png" height="160px" width="140px"> 
+		            <input type="radio" name="radio" id="sp3" value="blueberry"> 
+		        </label>
+
+		  <p id="spl1" style="display:none">You chose Matcha Cheesecake. Proceed to size.</p>
+		  <p id="spl2" style="display:none">You chose Oreo Cheesecake. Proceed to size.</p> 
+		  <p id="spl3" style="display:none">You chose Blueberry Cheesecake. Proceed to size.</p> 
+		    	<br>
+		    	<button class="buttons" onclick="rvq2(); shw();"> Next </button>
+
+		    	<div id="invisi" hidden>
+		   	<h1>Size</h1>
+		    		<br><br>
+
+		    		<label>
+		    			<input type="radio" name="rads" id="szs2">
+		    			16oz = 59 php
+		    		</label>
+		    		<label>
+		    			<input type="radio" name="rads" id="szs1">
+		    			22oz = 79 php
+		    		</label>
+		    		<br><br>
+		    			<h1>Add-Ons</h1>
+		   	<br><br>
+		   	<label>
+		        	<input type="radio" name="rds" id="a1">
+		                Nata De Coco  
+		            </label>
+		            <label >
+		                <input type="radio" name="rds" id="a2">
+		                Jelly
+		            </label>
+		            <label >
+		                <input type="radio" name="rds" id="a3">
+		                Pearl  
+		            </label>
+		            <label >
+		                <input type="radio" name="rds" id="a4">
+		                None
+		            </label>
+		            <p id="ds1"> </p>
+		            <p id="ds2"> </p>
+		            <p id="ds3"> </p>
+		            <br>
+		            <button class="buttons" onclick="dagdag2(); ipatong2(); add2(); asukal();"> Next </button><br>
+		            <div id="sgr" hidden>
+		            	<br>
+		            	<h1> Sugar Level </h1>
+		            	(Please put the Sugar Level) <br>
+		            	<input type="" name="" id="pera" placeholder="0-100"><br><br>
+		            	<button onclick="clck2(); bayad2();" class="buttons"> Next </button> 
+	                    <p id="sgrlvl" value ="clck()"></p>
+		            </div>
+		            <div id="pay2" hidden>
+		            	<input type="" name="" id="inpt" placeholder="Enter Your Money"><br><br>
+		            	<button onclick="clcks2(); rtrns();" class="buttons">Pay up</button>
+		            	<p id="lst1"></p>
+		            	<p id="lst2"></p>
+		            	<p id="lst3"></p>      		            
+		         	</div>
+		         	<div id="lastly"hidden>
+		         		<br><br><br>
+		         		<p> Thank you for ordering!</p>
+		         		<p> Return to Homepage</p>
+		         		<a href="SamsanTea.html"><img src="Pics/samsantea.png" width="100" height="80"></a>
+		         	</div>
+		    	</div>	    	
+	    </div>
+	    <br><br>
+	    <a href="SamsanTea.html"><button> Back </button></a> 
+	</center>
+
+	<script src="samsan.js"></script>
+</body>
+</html>
